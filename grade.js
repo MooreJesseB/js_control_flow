@@ -1,15 +1,17 @@
+
+
 var grade = function(score) {
-	switch (true) {
-		case score >= 90:
+	switch (score) {
+		case 9:
 			return "A";
 			break;
-		case score >= 80:
+		case 8:
 			return "B";
 			break;
-		case score >= 70:
+		case 7:
 			return "C";
 			break;
-		case score >= 60:
+		case 6:
 			return "D";
 			break;
 		default:
@@ -17,6 +19,7 @@ var grade = function(score) {
 			break;
 	}
 }
-val = Math.floor(Math.random()*100)
-console.log("With a value of " + val);
-console.log(grade(val));
+var rawScore = Math.floor(Math.random()*100)
+var score = Math.floor(rawScore/10);
+console.log("With a value of " + rawScore);
+console.log(grade(score));

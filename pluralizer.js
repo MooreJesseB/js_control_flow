@@ -1,9 +1,9 @@
 var thing = "Kangaroo";
-var coount = 10;
+var count = 10;
+var pluralChar = "";
 
-if (count === 1) {
-	console.log(count + " " + thing);
+if (parseInt(count) === 1) {
+	pluralChar = "s";
 }
-else {
-	console.log(count + " " + thing + "s")	
-}
+
+console.log(count, thing + pluralChar)
